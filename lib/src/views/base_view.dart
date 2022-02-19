@@ -35,7 +35,7 @@ class _BaseViewState<T extends BaseViewModel> extends State<BaseView<T>> {
                 Visibility(
                   visible: viewModel.isLoading,
                   child: const Center(
-                    child: CircularProgressIndicator(),
+                    child: CircularProgressIndicator.adaptive(),
                   ),
                 )
               ],
