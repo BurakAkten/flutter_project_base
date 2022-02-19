@@ -28,7 +28,7 @@ class _BaseViewState<T extends BaseViewModel> extends State<BaseView<T>> {
   Widget _buildScreenContent(
           BuildContext context, T viewModel, Widget? child) =>
       !viewModel.isInitialized
-          ? const Center(child: CircularProgressIndicator())
+          ? const Center(child: CircularProgressIndicator.adaptive())
           : Stack(
               children: [
                 widget.builder!(context, viewModel),
